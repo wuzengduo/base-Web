@@ -4,10 +4,15 @@
 	<meta charset="UTF-8">
 	<title>resume</title>
 	<link rel="stylesheet" type="text/css" href="css/style_1.css">
-	<link rel="stylesheet" type="text/css" href="css/style_2.css">
-	<link rel="stylesheet" type="text/css" href="css/style_3.css">
+	<link rel="stylesheet" type="text/css" href="" id="link">
 </head>
 <body>
+	<nav class="nav">
+        <span>切换样式 -></span>
+        <button class="style-btn" data-file="style_1">style_1.css</button>
+        <button class="style-btn" data-file="style_2">style_2.css</button>
+        <button class="style-btn" data-file="style_3">style_3.css</button>
+    </nav>
 	<main>
 		<h1>简历</h1>
 		<ul>
@@ -86,5 +91,17 @@
 			</li>
 		</ul>
 	</main>
+	<script>
+	    var cssLink = document.getElementById("link");
+	    var btn = document.querySelectorAll('.style-btn');
+
+	    var length = btn.length;
+	    for (var i = 0; i < length; i += 1) {
+	        btn[i].onclick = function() {
+	            var fileName = this.dataset.file;
+	            cssLink.href = 'css/' + fileName + '.css';
+	        }
+	    }
+	</script>
 </body>
 </html>
