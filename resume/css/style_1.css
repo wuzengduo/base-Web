@@ -1,0 +1,55 @@
+/*初始化*/
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body{font:12px"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:underline} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word} 
+/*主体*/
+main{
+	margin:2px;
+	font-size: 16px;
+}
+/*一级标题*/
+main h1{
+	margin:20px 0px;
+}
+/*二级标题*/
+main h2{
+	margin: 20px 0px;
+}
+/*基本信息*/
+#basicInfo li{
+	display: inline-block;
+	margin-right: 30px;
+}
+#basicInfo h3{
+	display: inline-block;
+}
+/*联系方式*/
+#contact li{
+	display: inline-block;
+	margin-right: 30px;
+}
+#contact h3{
+	display: inline-block;
+}
+#contact li a{
+	text-decoration: underline;
+	color: #0000FF;
+}
+/*能力描述*/
+#capacity li{
+	margin: 20px 0px;
+}
+/*教育经历*/
+#education li{
+	margin: 20px 0px;
+}
+/*项目经历*/
+#project li{
+	margin: 20px 0px;
+}

@@ -1,0 +1,11 @@
+/*一级标题*/
+main h1{
+	float: left;
+	width: 5em;
+	height: 20em;
+	color: white;
+	background: #4CC0FF;
+	text-align: center;
+	margin:-20px 20px 0px 0px;
+	padding: 50px 10px 0px 10px;
+}
