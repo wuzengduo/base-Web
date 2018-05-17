@@ -1,0 +1,579 @@
+/*初始化*/
+*{
+	box-sizing: border-box;
+}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body{font:12px"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:underline} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word}
+/*居中*/
+.center{
+	width: 1170px;
+	margin:0 auto;
+	overflow: auto;
+}
+/*helloworld 部分*/
+.helloworld{
+	width: 100%;
+	height: 990px;
+	background: url(../images/Divider.png) no-repeat,
+				url(../images/BackgroundMountain.png) no-repeat;
+	background-size: 100%;
+	text-align: center;
+}
+.helloworld h1{
+	color: #FFFFFF;
+	font-size: 80px;
+	margin:100px auto 70px;
+	font-weight: normal;
+}
+.helloworld p{
+	color: #cbcac8;
+	font-size: 20px;
+	margin:0px auto 90px;
+	padding:0px 51px;
+}
+.helloworld .account{
+	border:1px solid #69644c;
+	padding: 50px;
+}
+.helloworld .account h2{
+	color: #FFFFFF;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.helloworld .account p{
+	color: #69644c;
+	font-size: 14px;
+	margin-bottom: 45px;
+}
+.helloworld .account .sign{
+	height: 75px;
+	line-height: 75px;
+}
+.helloworld .account .sign #email{
+	width: 300px;
+	height: 50px;
+	margin-right: 20px;
+	background-color: transparent;
+	padding:15px 0px 15px 15px;
+	border:1px solid #69644c;
+}
+.helloworld .account .sign #email::-webkit-input-placeholder {
+  /* WebKit browsers */
+ 	color: #fff;
+ 	font-size: 16px;
+}
+.helloworld .account .sign #email:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+ 	color: #fff;
+ 	font-size: 16px;
+}
+.helloworld .account .sign #email::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+ 	color: #fff;
+ 	font-size: 16px;
+}
+.helloworld .account .sign #email::-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+ 	color: #fff;
+ 	font-size: 16px;
+}
+.helloworld .account .sign #password{
+	width: 300px;
+	height: 50px;
+	margin-right: 20px;
+	background-color: transparent;
+	padding:15px 0px 15px 15px;
+	border:1px solid #69644c;
+}
+.helloworld .account .sign #password::-webkit-input-placeholder {
+  /* WebKit browsers */
+ 	color: #69644c;
+ 	font-size: 16px;
+}
+.helloworld .account .sign #password:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+ 	color: #69644c;
+ 	font-size: 16px;
+}
+.helloworld .account .sign #password::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+ 	color: #69644c;
+ 	font-size: 16px;
+}
+.helloworld .account .sign #password::-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+ 	color: #69644c;
+ 	font-size: 16px;
+}
+.helloworld .account .sign button{
+	width:120px;
+	height: 50px;
+	font-weight: bold;
+}
+/*Boatload 部分*/
+.boatload{
+	width:100%;
+	height:710px;
+	text-align: center;
+}
+.boatload p{
+	font-size: 16px;
+	margin:100px auto 50px;
+}
+.boatload h1{
+	font-size: 45px;
+	margin:0px auto 70px;
+	padding: 0px 180px;
+	font-weight: normal;
+}
+.boatload ul{
+	width: 100%;
+	overflow: auto;
+}
+.boatload ul li{
+	float: left;
+	width: 585px;
+}
+.boatload ul li p{
+	color: #797979;
+}
+.boatload ul li:nth-child(1) h2,.boatload ul li:nth-child(3) h2{
+	text-align: left;
+	margin-left: 80px;
+}
+.boatload ul li:nth-child(1) p,.boatload ul li:nth-child(3) p{
+	margin: 25px 100px 40px 80px;
+	text-align: left;
+}
+.boatload ul li:nth-child(2) h2,.boatload ul li:nth-child(4) h2{
+	text-align: left;
+	margin-left: 80px;
+}
+.boatload ul li:nth-child(2) p,.boatload ul li:nth-child(4) p{
+	margin: 25px 0px 40px 80px;
+	text-align: left;
+}
+.boatload ul li:nth-child(2),.boatload ul li:nth-child(4){
+	padding-left: 90px;
+}
+.boatload ul li .mobileImg{
+	float: left;
+	background: url(../images/sprite.png) -63px -1671px no-repeat;
+	width: 40px;
+	height: 60px;
+	margin-left: 20px;
+}
+.boatload ul li .accImg{
+	float: left;
+	background: url(../images/sprite.png) -286px -1671px no-repeat;
+	width: 45px;
+	height: 62px;
+}
+.boatload ul li .fluidImg{
+	float: left;
+	background: url(../images/sprite.png) -120px -1671px no-repeat;
+	width: 60px;
+	height: 62px;
+}
+.boatload ul li .customImg{
+	float: left;
+	background: url(../images/sprite.png) -202px -1671px no-repeat;
+	width: 50px;
+	height: 62px;
+	line-height: 62px;
+}
+/*support 部分*/
+.support{
+	width: 100%;
+	height: 800px;
+	background:url(../images/Divider.png) no-repeat,
+			   url(../images/Background.png) no-repeat,
+			   url(../images/BackgroundForest.png) no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+.support .supportContent{
+	width:520px;
+	margin: 0 140px 0 80px;
+	float: left;
+}
+.support .supportContent h1{
+	font-size: 40px;
+	color: #ffffff;
+	text-align: left;
+	margin: 180px  0px 50px 0px;
+	padding-right: 90px;
+}
+.support .supportContent p{
+	font-size: 18px;
+	color: #b0b1b1;
+	width: 440px;
+	text-align: left;
+	margin-bottom: 50px;
+}
+.support .supportImg{
+	width:640px;
+	height:605px;
+	background: url(../images/Ipad.png) no-repeat,
+				url(../images/Screen.png) 61px 31px no-repeat;
+	position: absolute;
+	right:0px;
+	bottom:120px;
+}
+.support .supportContent .checkbtn{
+	width: 240px;
+	height: 60px;
+	margin-right: 20px;
+	color: #6c6c6c;
+}
+.support .supportContent .trybtn{
+	width: 240px;
+	height: 60px;
+	background-color: transparent;
+	color: #fff;
+	border:1px solid #69644c;
+}
+/*product 部分*/
+.product{
+	width: 100%;
+	height:600px;
+	text-align: center;
+	border-bottom: 1px solid #e7e7e7;
+}
+.product h1{
+	font-size: 45px;
+	margin: 100px 0px 50px 0px;
+}
+.product ul{
+	display: flex;
+	margin-bottom: 80px;
+}
+.product ul .sing{
+	flex: 1;
+	justify-content:  space-between;
+	margin-right: 100px;
+}
+.product ul .hero{
+	flex: 1;
+	justify-content:  space-between;
+	margin-right: 100px;
+}
+.product ul .pontland{
+	flex: 1;
+	justify-content:  space-between;
+}
+.product ul .singImg{
+	background: url(../images/sprite.png) -55px -1565px no-repeat;
+	width:130px;
+	height: 45px;
+	margin:30px auto;
+}
+.product ul .heroImg{
+	background: url(../images/sprite.png) -220px -1565px no-repeat;
+	width:130px;
+	height: 45px;
+	margin:30px auto;
+}
+.product ul .pontlandImg{
+	background: url(../images/sprite.png) -380px -1565px no-repeat;
+	width:130px;
+	height: 45px;
+	margin:30px auto;
+}
+.product ul .sing p{
+	font-size: 20px;
+	color:#848484;
+}
+.product ul .hero p{
+	font-size: 20px;
+	color:#848484;
+}
+.product ul .pontland p{
+	font-size: 20px;
+	color:#848484;
+}
+/*scheme 部分*/
+.scheme{
+	width: 100%;
+	height: 1030px;
+	text-align: center;
+	border-bottom: 1px solid #e7e7e7;
+}
+.scheme .schCont{
+	margin:115px 0px;
+	overflow: auto;
+}
+.scheme .schCont .grass{
+	width: 50%;
+	height: 355px;
+	background:url(../images/grass.png) no-repeat;
+	float: left;
+}
+.scheme .schCont .learn{
+	width: 50%;
+	height: 355px;
+	float: left;
+	padding: 35px 110px;
+}
+.scheme .schCont .learn h2{
+	font-size: 26px;
+	margin-bottom: 45px;
+	text-align: left;
+}
+.scheme .schCont .learn p{
+	font-size: 18px;
+	color:#848484;
+	text-align: left;
+	line-height: 30px;
+}
+.scheme .schCont .bird{
+	width: 50%;
+	height: 355px;
+	background:url(../images/bird.png) no-repeat;
+	float: right;
+}
+.scheme .schCont .chooseCont{
+	width: 50%;
+	height: 355px;
+	float: right;
+	padding: 35px 110px 0px 0px;
+}
+.scheme .schCont .chooseCont h2{
+	font-size: 26px;
+	margin-bottom: 45px;
+	text-align: left;
+}
+.scheme .schCont .chooseCont p{
+	font-size: 18px;
+	color:#848484;
+	text-align: left;
+	line-height: 30px;
+	padding-right: 105px;
+}
+/*crew部分*/
+.crew{
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #e7e7e7;
+}
+.crew h1{
+	font-size: 45px;
+	margin: 100px 0px 50px 0px;
+}
+.crew p{
+	font-size: 20px;
+	color:#848484;
+	line-height: 30px;
+	padding: 0px 200px;
+}
+.crew .creWImage{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	margin:35px 0px 100px 0px;
+}
+.crew .creWImage .user{
+	flex: 0;
+	justify-content: center;
+	height: 340px;
+	width: 470px;
+	margin:0px 30px 30px 0px;
+}
+.crew .creWImage .user h2{
+	visibility: hidden;
+	margin-top: 110px;
+	color: #ffffff;
+}
+.crew .creWImage .user p{
+	visibility: hidden;
+	margin-top: 20px;
+	color: #a6a6a6;
+	padding: 0px;
+	line-height: 0px;
+	width: 470px;
+}
+.crew .creWImage .user .usersocial{
+	visibility: hidden;
+	width: 213px;
+	height:55px;
+	margin:35px auto;
+}
+.crew .creWImage .user:hover h2{
+	visibility: visible;
+}
+.crew .creWImage .user:hover p{
+	visibility: visible;
+}
+.crew .creWImage .user:hover .usersocial{
+	visibility: visible;
+}
+.crew .creWImage .userpic1{
+	background: url(../images/sprite.png) -62px -23px no-repeat;
+}
+.crew .creWImage .userpic1:hover{
+	background: url(../images/Background.png) no-repeat,
+				url(../images/sprite.png) -62px -23px no-repeat;
+}
+.crew .creWImage .user .socialImg1{
+	background: url(../images/SocialButtons.png) no-repeat;
+}
+.crew .creWImage .userpic2{
+	background: url(../images/sprite.png) -62px -1168px no-repeat;
+}
+.crew .creWImage .userpic2:hover{
+	background: url(../images/Background.png) no-repeat,
+				url(../images/sprite.png) -62px -1168px no-repeat;
+}
+.crew .creWImage .user .socialImg2{
+	background: url(../images/SocialButtons.png) no-repeat;
+}
+.crew .creWImage .userpic3{
+	background: url(../images/sprite.png) -62px -408px no-repeat;
+}
+.crew .creWImage .user .socialImg3{
+	background: url(../images/SocialButtons.png) no-repeat;
+}
+.crew .creWImage .userpic3:hover{
+	background: url(../images/Background.png) no-repeat,
+				url(../images/sprite.png) -62px -408px no-repeat;
+}
+.crew .creWImage .userpic4{
+	background: url(../images/sprite.png) -62px -789px no-repeat;
+}
+.crew .creWImage .user .socialImg4{
+	background: url(../images/SocialButtons.png) no-repeat;
+}
+.crew .creWImage .userpic4:hover{
+	background: url(../images/Background.png) no-repeat,
+				url(../images/sprite.png) -62px -789px no-repeat;
+}
+/*contact部分*/
+.contact .contactinput{
+	width: 470px;
+	height: 560px;
+	border:1px solid #e7e7e7;
+	padding: 45px 50px;
+	margin:70px 130px 70px 0px;
+	float: left;
+}
+.contact .contactinput h1{
+	font-size: 22px;
+	margin-bottom: 50px;
+	text-align: center;
+	color: #6c6c6c;
+}
+.contact .contactinput .continput{
+	width: 370px;
+	height: 50px;
+	margin: 0px 0px 30px 0px;
+	padding:15px 0px 15px 15px;
+	border:1px solid #e7e7e7;
+}
+.contact .contactinput .continput::-webkit-input-placeholder {
+  /* WebKit browsers */
+ 	color: #a6a6a6;
+ 	font-size: 16px;
+}
+.contact .contactinput .continput:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+ 	color: #a6a6a6;
+ 	font-size: 16px;
+}
+.contact .contactinput .continput::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+ 	color: #a6a6a6;
+ 	font-size: 16px;
+}
+.contact .contactinput .continput::-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+ 	color: #a6a6a6;
+ 	font-size: 16px;
+}
+.contact .contactinput #contactText{
+	height: 145px;
+	resize:none;
+}
+.contact .contactinput #contactsubmit{
+	background-color: #141414;
+	color: #ffffff;
+}
+.contact .contactcont{
+	padding: 45px 50px;
+	margin:70px 130px 70px 0px;
+}
+.contact .contactcont h1{
+	font-size: 40px;
+	margin: 60px 0px;
+}
+.contact .contactcont p{
+	font-size: 16px;
+	font-weight: bold; 
+	margin-bottom: 40px;
+	line-height: 20px;
+}
+.contact .contactcont > p{
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 70px;
+	color: #848484;
+}
+.contact .contactcont .addricon{
+	width: 30px;
+	height: 30px;
+	background: url(../images/sprite.png) -378px -1671px;
+	float: left;
+	margin-right: 5px;
+}
+.contact .contactcont .telicon{
+	width: 30px;
+	height: 30px;
+	background: url(../images/sprite.png) -449px -1671px;
+	float: left;
+	margin-right: 5px;
+}
+.contact .contactcont .emailicon{
+	width: 30px;
+	height: 30px;
+	background: url(../images/sprite.png) -507px -1671px;
+	float: left;
+	margin-right: 5px;
+}
+/*footer 部分*/
+footer{
+	width: 100%;
+	background-color: #141414;
+	color: #fff;
+}
+footer>ul{
+	margin: 0px 90px;
+	overflow: auto;
+}
+footer>ul>li{
+	float: left;
+	padding:85px 125px;
+}
+footer>ul>li h1{
+	font-size: 20px;
+}
+footer>ul>li:last-child{
+	width: 585px;
+}
+footer>ul>li>ul>li{
+	font-size: 18px;
+	color: #575757;
+	margin-top: 30px;
+}
+footer>ul>li>ul .socialsImg{
+	background:url("../images/Socials Buttons.png");
+	width: 222px;
+	height: 18px;
+}
