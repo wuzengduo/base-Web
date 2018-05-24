@@ -1,0 +1,414 @@
+/*初始化*/
+*{
+	box-sizing: border-box;
+}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body{font:12px"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:underline} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word}
+/*总体布局*/
+main{
+	position: relative;
+    height: 100%;
+    min-width: 780px;
+    overflow: hidden;
+}
+.chatContent{
+	display: flex;
+}
+.menu{
+	width: 352px;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+}
+/*menu-primary 部分*/
+.menu .primary{
+	width: 102px;
+	height: 100%;
+	min-height: 2000px;
+	background-color: #1d2531;
+	float: left;
+}
+.menu .primary .apps{
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin-left: 20px;
+}
+.menu .primary .apps li{
+	width: 60px;
+	height: 60px;
+	margin-top: 20px;
+}
+.menu .primary .apps .active{
+	position: relative;
+}
+.menu .primary .apps .active .activeHightlight{
+	background-image: url(../images/menu-menu-secondary/ActiveHighlight.png);
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 35%;
+	left: -25px;
+}
+.menu .primary .bottomActions{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin-left: 20px;
+}
+.menu .primary .bottomActions li{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+/*menu-secondary 部分*/
+.menu .secondary{
+	width: 250px;
+	height: 100%;
+	min-height: 2000px;
+	background-color: #222c3c;
+	float: left;
+}
+.menu .secondary>ul{
+	width: 195px;
+	height: 220px;
+	margin:0px 30px;
+	color: #5b6779;
+}
+.menu .secondary>ul>li h1{
+	color: #5b6779;
+	font-size: 16px;
+	float: left;
+	margin-top: 25px;
+}
+.menu .secondary>ul>li .settingsIcon{
+	background: url(../images/menu-menu-primary/Settings.png) no-repeat;
+	width: 20px;
+	height: 20px; 
+	float: right;
+	margin-top: 25px;
+}
+.menu .secondary>ul>li>ul:before{
+	content:"."; 
+	height:0; 
+	visibility:hidden; 
+	display:block; 
+	clear:both;
+}
+.menu .secondary>ul>li{
+	border-bottom: 1px solid #2a3547;
+}
+.menu .secondary>ul>li:last-child{
+	border-bottom: none;
+}
+.menu .secondary>ul>li>ul li{
+	margin:25px 0px; 
+}
+.menu .secondary>ul>li>ul li h2{
+	color: #99a1ae;
+	font-size: 14px;
+}
+.menu .secondary>ul>li>ul li .notice{
+	float: right;
+	width:35px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 14px;
+	background-color: #279bf3;
+	border-radius: 15px;  
+}
+.menu .secondary>ul>li>ul .activeNotice h2{
+	float: left;
+}
+.menu .secondary>ul>li>ul .activeNotice:after{
+	content:"."; 
+	height:0; 
+	visibility:hidden; 
+	display:block; 
+	clear:both;
+}
+.menu .secondary>ul>li>ul li .alertIcon{
+	background: url(../images/menu-menu-secondary/AlertIcon.png) no-repeat;
+	width: 25px;
+	height: 25px;
+	float: right; 
+}
+.menu .secondary>ul>li>ul .active{
+	position: relative;
+}
+.menu .secondary>ul>li>ul .active h2{
+	color: #ffffff;
+}
+.menu .secondary>ul>li>ul .active .activeHightlight{
+	background-image: url(../images/menu-menu-secondary/ActiveHighlight.png);
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	left: -25px;
+}
+.menu .secondary .monthGoal{
+	position: fixed;
+	bottom: 0;
+	color: #ffffff;
+	margin:20px 30px 15px 30px;
+	
+}
+.menu .secondary .monthGoal span{
+	font-size: 14px;
+	margin-right: 20px;
+}
+.menu .secondary .monthGoal .fillImg{
+	background: url(../images/menu-menu-secondary/Base.png) no-repeat,
+			    url(../images/menu-menu-secondary/Fill.png) no-repeat;
+	width: 195px;
+	height: 15px;
+	margin-top: 20px;
+}
+/*chat-profile 部分*/
+
+.chat .profile{
+	margin: 30px 382px;
+}
+.chat .profile h1{
+	color: #354052;
+}
+.chat .profile .namePart{
+	position: absolute;
+	top: 15px;
+	right: 30px;
+}
+.chat .profile .namePart img{
+	float: left;
+}
+.chat .profile .namePart .name{
+	float: left;
+	margin-right: 35px;
+}
+.chat .profile .namePart .name h2{
+	color: #2399f1;
+}
+.chat .profile .namePart .name p{
+	font-size: 18px;
+	color: #b5b5b5;
+}
+.chat .profile .namePart .photo{
+	margin-right: 17px;
+}
+.chat .profile .namePart .dropdown{
+	margin-top: 20px;
+}
+/*chat-left 部分*/
+.chat .chat-left{
+	width:400px;
+	flex: 0;
+}
+.chat .chat-left .search {
+	padding: 0px 30px;
+	position: relative;
+	height: 70px;
+	border: 1px solid #e6e9ec;
+}
+.chat .chat-left .search input{
+	margin: 15px 0px 20px 0px;
+	width: 340px;
+	height: 35px;
+	padding: 12px 35px 12px 14px;
+	border:1px solid #e6e9ec;
+	border-radius: 5px;
+}
+.chat .chat-left .search img{
+	position: absolute;
+	right: 45px;
+	top: 25px;
+}
+.chat .chat-left ul li{
+	padding: 0px 30px;
+	height: 130px;
+	border: 1px solid #e6e9ec;
+	border-top: none;
+	overflow: hidden;
+	position: relative;
+}
+.chat .chat-left ul li img{
+	margin: 15px 20px 10px 0px;
+	float: left;
+}
+.chat .chat-left ul li h1{
+	margin: 15px 20px 8px 0px;
+	font-size: 18px;
+	color: #585d68;
+}
+.chat .chat-left ul li .chatdate{
+	position: absolute;
+	right: 30px;
+	top: 15px;
+	font-size: 16px;
+	color: #7f8fa4;
+}
+.chat .chat-left ul li h2{
+	margin: 0px 20px 10px 0px;
+	font-size: 16px;
+	color: #d5d5d5;
+}
+.chat .chat-left ul li p{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+	height: 55px;
+	font-size: 14px;
+	color: #585d68;
+}
+.chat .chat-left ul .active{
+	border-left: 3px solid #00aaff;
+}
+.chat .chat-left ul .active h1{
+	margin: 15px 20px 8px 0px;
+	padding-left: 80px; 
+	font-size: 18px;
+	color: #00aaff;
+	background: url(../images/chat/chats/Status.png) 66px no-repeat;
+	width: 318px;
+	height: 20px;
+}
+.chat .chat-left ul .active p{
+	width: 300px;
+}
+.chat .chat-left ul .active .chatalert{
+	display: block;
+	background-color: #00aaff;
+	border-radius: 50%;
+	position: absolute;
+	right: 30px;
+	bottom: 27px;
+	width: 25px;
+	height: 25px;
+	font-size: 16px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 25px;
+}
+/*chat-right 部分*/
+.chat .chat-right{
+	flex: auto;
+	width: 100%;
+	position: relative;
+	height: 70px;
+	border: 1px solid #e6e9ec;
+}
+.chat .chat-right .chat-right-head{
+	padding: 0px 30px;
+	min-width: 500px;
+	border-bottom: 1px solid #d9dde3; 
+}
+.chat .chat-right .chat-right-head h1{
+	color: #585d68;
+	margin:20.5px 0px;
+	background: url(../images/chat/Profilename/Status.png) 165px no-repeat;
+}
+.chat .chat-right .chat-right-head #Tools{
+	position: absolute;
+	right: 175px;
+	top: 25px;
+	padding-right: 25px;
+	border-right: 1px solid #e6e9ec;
+}
+.chat .chat-right .chat-right-head span{
+	position: absolute;
+	right: 105px;
+	top: 35px;
+}
+.chat .chat-right .chat-right-head #ChatsoneArrows{
+	position: absolute;
+	right: 20px;
+	top: 25px;
+}
+/*chat-right-content 部分*/
+.chat .chat-right{
+	height: 100%;
+	padding:0px;
+}
+.chat .chat-right .chat-right-content ul{
+	overflow: hidden;
+	padding-left: 30px; 
+}
+.chat .chat-right .chat-right-content ul li{
+	margin: 30px 0px;
+}
+.chat .chat-right .chat-right-content ul li img{
+	float: left;
+	margin-right: 20px;
+}
+.chat .chat-right .chat-right-content ul li h1{
+	float: left;
+	font-size: 18px;
+	color: #585d68;
+	margin-right: 10px;
+}
+.chat .chat-right .chat-right-content ul li .open-chat-time{
+	margin-bottom: 10px;
+	font-size: 18px;
+	color: #94a1b2;
+}
+.chat .chat-right .chat-right-content ul li article{
+	padding:0px 55px 0px 66px;
+	font-size: 18px;
+	color: #585d68;
+}
+.chat .chat-right .chat-right-content ul li article{
+	padding:0px 55px 0px 66px;
+	font-size: 18px;
+	color: #585d68;
+}
+.chat .chat-right .chat-right-content .open-chat-date{
+	position: relative;
+    height: 1px;
+    width: 100%;
+    color: #7f8fa4;
+    background-color: #d9dde3;
+}
+.chat .chat-right .chat-right-content .open-chat-date:after{
+    content: attr(data-time);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 17px;
+    background-color: #fff;
+    font-size: 18px;
+}
+.chat .chat-right .chat-right-content ul li #photos{
+    padding-left: 66px;
+    margin: 30px 0px;
+}
+.chat .chat-right .chat-right-content .newMessages{
+	background-color: #2399f1;
+    color: #2399f1;
+}
+.chat .chat-right .chat-right-content ul li .addPart{
+    position: relative;
+}
+.chat .chat-right .chat-right-content ul li #add{
+    margin: 30px 0px;
+}
+.chat .chat-right .chat-right-content ul li input{
+	position: absolute;
+	top: 0px;
+	left: 54px;
+    margin: 30px 0px;
+    height: 54px;
+    width: 50em;
+    padding: 20px 40px 20px 20px;
+    font-size: 18px;
+    border: 1px solid #d9dde3;
+}
