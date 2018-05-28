@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+    <style type="text/css">
+         table  
+        {    
+            text-align: center;  
+            border: 1px solid #cad9ea; 
+        }  
+        table td, table th  
+        {  
+            border: 1px solid #cad9ea;  
+            color: #666;  
+            height: 30px;  
+        }  
+        table thead th  
+        {  
+            background-color: #CCE8EB;  
+            width: 100px;  
+        }  
+        table tr:nth-child(odd)  
+        {  
+            background: #fff;  
+        }  
+        table tr:nth-child(even)  
+        {  
+            background: #F5FAFA;  
+        }  
+    </style>
+</head>
+<body>
+    <div id="partOne">
+        <h1>Part Ⅰ</h1>        
+        <input id="first-number" type="text" value="0" placeholder="第一个数字">
+        <input id="second-number" type="text" value="0" placeholder="第二个数字">
+        <button id="add-btn">加</button>
+        <button id="minus-btn">减</button>
+        <button id="times-btn">乘</button>
+        <button id="divide-btn">除</button>
+        <p id="result">运算结果</p>    
+    </div>
+
+    <div id="partTwo">
+        <h1>Part Ⅱ</h1>
+        <input id="dec-number" type="number" placeholder="输入一个十进制非负整数" style="width: 200px;">
+        <!-- partThree -->
+        <input id="bin-bit" type="number" placeholder="输入转化后二进制数字位数" style="width: 200px;">
+        <button id="trans-btn">转化为二进制</button>
+        <p id="resultTwo">运算结果</p>
+    </div>
+    
+    <div id="partFour">
+        <h1>Part Ⅳ</h1>
+        <h2>3的小游戏</h2>
+        <p>从1到100，以此在console输出各数字，但是，当数字为3的倍数或者含有3的时候，输出“PA”</p>
+        <p>请打开控制台看结果</p>
+    </div>
+    <div id="partFive">
+        <h1>Part Ⅴ</h1>
+        <table cellpadding="10">
+            <caption>练习使用循环实现一个九九乘法表</caption>
+            <thead>
+                <tr>
+                    <th colspan="9">九九乘法表</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+<!--                 <tr>
+                    <td>1*1=1</td>
+                </tr>
+                <tr>
+                    <td>1*2=2</td>
+                    <td>2*2=4</td>
+                </tr>
+                <tr>
+                    <td>1*3=3</td>
+                    <td>2*3=6</td>
+                    <td>3*3=9</td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        // partOne
+        var add = document.getElementById("add-btn");
+        var minus = document.getElementById("minus-btn");
+        var times = document.getElementById("times-btn");
+        var divide = document.getElementById("divide-btn");
+        add.addEventListener('click', addFunc);
+        minus.addEventListener('click', minusFunc);
+        times.addEventListener('click', timesFunc);
+        divide.addEventListener('click', divideFunc);
+        function addFunc(){
+          var firstNum = document.getElementById("first-number").value;
+          var secondNum = document.getElementById("second-number").value;
+          if (isNaN(firstNum)||isNaN(secondNum)) {
+            console.log("请输入数字");
+            document.getElementById("result").innerHTML = "请输入数字 ";
+          } else {
+            result = Number(firstNum) + Number(secondNum);
+            document.getElementById("result").innerHTML = "运算结果 " + result;
+          }
+        }
+        function minusFunc(){
+          var firstNum = document.getElementById("first-number").value;
+          var secondNum = document.getElementById("second-number").value;
+          if (isNaN(firstNum)||isNaN(secondNum)) {
+            console.log("请输入数字");
+            document.getElementById("result").innerHTML = "请输入数字 ";
+          } else {
+            result = Number(firstNum) - Number(secondNum);
+            document.getElementById("result").innerHTML = "运算结果 " + result;
+          }
+        }
+        function timesFunc(){
+          var firstNum = document.getElementById("first-number").value;
+          var secondNum = document.getElementById("second-number").value;
+          if (isNaN(firstNum)||isNaN(secondNum)) {
+            console.log("请输入数字");
+            document.getElementById("result").innerHTML = "请输入数字 ";
+          } else {
+            result = Number(firstNum) * Number(secondNum);
+            document.getElementById("result").innerHTML = "运算结果 " + result;
+          }
+        }
+        function divideFunc(){
+          var firstNum = document.getElementById("first-number").value;
+          var secondNum = document.getElementById("second-number").value;
+          if (isNaN(firstNum)||isNaN(secondNum)) {
+            console.log("请输入数字");
+            document.getElementById("result").innerHTML = "请输入数字 ";
+          } else if(secondNum == 0) {
+            console.log('除数不能为零');
+            document.getElementById("result").innerHTML = "除数不能为零";
+          }else{
+            result = firstNum / secondNum;
+            document.getElementById("result").innerHTML = "运算结果 " + result;
+          }
+        }
+
+        // partTwo
+        var transBtn = document.getElementById("trans-btn");
+        transBtn.onclick = function(){
+            var decNumberInput = Number(document.getElementById("dec-number").value);
+            var binBit = Number(document.getElementById("bin-bit").value);
+            if(decNumberInput < 0){
+                document.getElementById("resultTwo").innerHTML = "请输入十进制非负整数";
+                console.log('请输入十进制非负整数');
+            }else{
+                dec2bin(decNumberInput,binBit);
+            }
+        }
+        function dec2bin(decNumber,binLength) {
+            // console.log(Math.floor(decNumber/2).toString());
+            // console.log(binLength);       
+            var result = "";
+            if(decNumber == 0){
+                var result = "0";
+            }else{
+                while(decNumber > 0){
+                   result += (decNumber % 2).toString();
+                   decNumber = Math.floor(decNumber/2);
+                }
+
+                // var dec2Num = result.split("").reverse().join("");
+            }
+            // console.log(result.length);
+            // console.log(binLength);
+            if(result.length >= binLength){
+                var dec2Num = result.split("").reverse().join("");
+                document.getElementById("resultTwo").innerHTML = "运算结果 " + dec2Num;
+            }else{
+                while(result.length<binLength){
+                    result += "0";
+                }
+                var dec2Num = result.split("").reverse().join("");
+                document.getElementById("resultTwo").innerHTML = "运算结果 " + dec2Num;
+            }
+        }
+        // partFour
+        for(let i=1;i<=100;i++){
+            if(i % 3 == 0 || i.toString().split("")[0] == 3 || i.toString().split("")[1] == 3){
+                console.log('PA');
+            }else{
+                console.log(i);
+            }
+        }
+        // partFive 九九乘法表
+        for(let i = 1;i<=9;i++){
+            var MultipleTable = document.getElementById("tbody");
+            var tr = document.createElement("tr");
+            MultipleTable.appendChild(tr);
+            for(let j = 1;j<=i;j++){
+                var mulRes = j*i;
+                var td = document.createElement("td");
+                 tr.appendChild(td);
+                var textNode = document.createTextNode(j+"*"+i+"="+mulRes);
+                td.appendChild(textNode);
+            }
+        }
+        // partSix
+        window.onload = function(){
+            var myDate = new Date();
+            var hours = myDate.getHours();
+            if(6 <= hours && hours <= 11){
+                alert("早上好");
+            }else if(12 <= hours && hours <= 18){
+                alert("下午好");
+            }else{
+                alert("晚上好");
+            }
+        };
+    </script>
+</body>
+</html>
