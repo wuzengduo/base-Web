@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>20-21让你和页面对话</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<!-- 第一部分 -->
+	<div id="partOne">
+		<h1>Part Ⅰ</h1>
+		<h2>打开控制台查看</h2>
+		<input id="name" type="text">    
+		<button id="submit-btn">Submit</button>
+	</div>
+	<!-- 第二部分 -->
+	<div id="partTwo">
+		<h1>Part Ⅱ控制元素的显示及隐藏</h1>
+		<label>
+	    	<input id="school" name="status" type="radio">
+	    	School
+	    </label>
+	    <label>
+	        <input id="company" name="status" type="radio">
+	        Company
+	    </label>
+
+	    <select id="school-select">        
+	        <option>北京邮电大学</option>
+	        <option>黑龙江大学</option>
+	        <option>华中科技大学</option>
+	    </select>
+
+	    <select id="company-select">        
+	        <option>百度</option>
+	        <option>爱奇艺</option>        
+	    </select>
+	</div>
+	<!-- 第三 四部分 -->
+	<div id="partThree">
+		<h1>Part Ⅲ点击某一个 Li 标签时，将 Li 的背景色显示在 P 标签内，并将 P 标签中的文字颜色设置成 Li 的背景色藏<br>Part Ⅳ使用事件委托完成</h1>
+		<ul class="palette">
+	        <li style="background-color:crimson"></li>
+	        <li style="background-color:bisque"></li>
+	        <li style="background-color:blueviolet"></li>
+	        <li style="background-color:coral"></li>
+	        <li style="background-color:chartreuse"></li>
+	        <li style="background-color:darkolivegreen"></li>
+	        <li style="background-color:cyan"></li>
+	        <li style="background-color:#194738"></li>        
+	    </ul>
+
+	    <p class="color-picker"></p>
+	</div>
+	<!-- 第五部分 -->
+	<div class="partFive">
+		<h1>Part Ⅴ</h1>
+		<div id="fade-obj" style="width:300px;height:300px;background:#000"></div>
+		<button id="fade-btn">淡出</button>
+	</div>
+	<!-- 第六部分 -->
+	<div class="partSix">
+		<h1>Part Ⅵ</h1>
+		<div id="sprite" style="width: 480px;height: 480px;"></div>
+	</div>
+
+	<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
