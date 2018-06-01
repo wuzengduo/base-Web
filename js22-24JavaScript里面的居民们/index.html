@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript里面的居民们</title>
+</head>
+<body>
+	<!-- 第一部分 Number-->
+	<div id="partOne">
+		<h1>Part Ⅰ</h1>
+		<div>
+		    <label>Number A:<input id="radio-a" type="radio" name="math-obj" value="a"></label><input id="num-a" type="text">
+		    <label>Number B:<input id="radio-b" type="radio" name="math-obj" value="b"></label><input id="num-b" type="text">
+		</div>
+		<div id="btns">
+		    <button>判断当前选中的输入框输入内容是否为数字</button>
+		    <button>把 A 四舍五入为 B 个小数位数的数字</button>
+		    <button>当前选中数字的绝对值</button>
+		    <button>对当前选中的数字进行上舍入</button>
+		    <button>对当前选中的数字进行下舍入</button>
+		    <button>把当前选中的数字四舍五入为最接近的整数</button>
+		    <button>返回 A 和 B 中的最高值</button>
+		    <button>返回 A 和 B 中的最低值</button>        
+		</div>
+		<p id="result"></p>
+	</div>
+	<!-- 第二部分 String-->
+	<div id="partTwo">
+		<h1>Part Ⅱ</h1>
+		<div>
+		    <label>String A:
+		        <input id="radioTwo-a" type="radio" checked="true" name="str-obj" value="a">
+		    </label>
+		    <textarea id="str-a"></textarea>
+		    <label>String B:
+		        <input id="radioTwo-b" type="radio" name="str-obj" value="b">
+		    </label>
+		    <textarea id="str-b" rows="3"></textarea>        
+		    <label>Num A：<input id="numTwo-a" type="number" value="0"></label>
+		    <label>Num B：<input id="numTwo-b" type="number" value="1"></label>
+		</div>
+		<div id="btnsTwo">
+		    <button>获取当前选中输入的内容长度</button>
+		    <button>当前选中输入中的第3个字符</button>
+		    <button>把两个输入框的文字连接在一起输出（concat）</button>
+		    <button>输入B中的内容，在输入A的内容中第一次出现的位置（indexOf）</button>
+		    <button>输入A中的内容，在输入B的内容中最后一次出现的位置（lastIndexOf）</button>
+		    <button>使用slice获取选中输入框内容的部分内容，参数为num-a及num-b</button>
+		    <button>当前选中输入框的行数</button>
+		    <button>使用substr获取选中输入框内容的子字符串，参数为num-a及num-b</button>
+		    <button>把所选输入框中的内容全部转为大写</button>
+		    <button>把所选输入框中的内容全部转为小写</button>
+		    <button>把所选输入框中内容的半角空格全部去除</button>
+		    <button>把所选输入框中内容的a全部替换成另外一个输入框中的内容</button>
+		</div>
+		<p id="resultTwo"></p>
+	</div>
+	<!-- 第三部分 String-->
+	<div id="partThree">
+		<h1>Part Ⅲ</h1>
+		<p>打开控制台查看</p>
+	</div>
+	<!-- 第四部分 Object-->
+	<div id="partFour">
+		<h1>Part Ⅳ</h1>
+		<label>NameOrId：<input id="objNameOrIdFour" type="text" placeholder="输入Name找对应的Id"></label>
+		<div id="btnsFour">
+			<button>假设id和name均不会重复，根据输入name找到对应的id</button>
+		    <button>假设id和name均不会重复，根据输入id找到对应的name</button>
+		</div>
+		<p id="resultFour"></p>
+		<ul>
+			<li>
+				<span>前序遍历：</span>
+				<span id="DLR"></span>			
+			</li>
+			<li>
+				<span>中序遍历:</span>
+				<span id="LDR"></span>			
+			</li>
+			<li>
+				<span>后序遍历:</span>
+				<span id="LRD"></span>
+			</li>
+		</ul>
+	</div>
+	<!-- 第五部分 Array 队列-->
+	<div id="partFive">
+		<h1>Part Ⅴ</h1>
+		<input id="queue-input" type="text">
+		<p id="queue-cont">队列内容：apple-&gt;pear</p>    
+		<button id="in-btn">入队</button>
+		<button id="out-btn">出队</button>
+		<button id="font-btn-right">打印队头元素内容(队头在最右侧)</button>
+		<button id="font-btn-left">打印队头元素内容(队头在最左侧)</button>
+		<button id="empty-btn">判断队列是否为空</button>
+	</div>
+	<!-- 第六部分 Array 栈-->
+	<div id="partSix">
+		<h1>Part Ⅵ</h1>
+		<input id="stack-input" type="text">
+		<p id="stack-cont">栈内容：apple-&gt;pear</p>    
+		<button id="push-btn">进栈</button>
+		<button id="pop-btn">退栈</button>
+		<button id="stak-font-btn-right">打印栈顶元素内容(栈顶在最右侧)</button>
+		<button id="stak-font-btn-left">打印栈顶元素内容(栈顶在最左侧)</button>
+		<button id="stak-empty-btn">判断栈是否为空</button>
+	</div>
+	<!-- 第七部分 排序-->
+	<div id="partSeven">
+		<h1>Part Ⅶ</h1>
+		<p>var arr = [43, 54, 4, -4, 84, 100, 58, 27, 140];</p>
+		<h2>将上面数组分别按从大到小以及从小到大进行排序</h2>
+		<p id="bigToSmall"></p>
+		<p id="smallToBig"></p>
+
+		<p>var arr = ['apple', 'dog', 'cat', 'car', 'zoo', 'orange', 'airplane'];</p>
+		<h2>将上面数组分别按字母顺序a-z及z-a进行排序</h2>
+		<p id="aToZ"></p>
+		<p id="zToA"></p>
+
+		<p>var arr = [[10, 14], [16, 60], [7, 44], [26, 35], [22, 63]];</p>
+		<h2>将上面的二维数组，按照每个元素中第二个数从大到小的顺序进行排序输出，输出结果应该为：</h2>
+		<p id="twoBigToSmall"></p>
+		<p>var arr = [
+			    {
+			        id: 1,
+			        name: 'candy',
+			        value: 40
+			    }, {
+			        id: 2,
+			        name: 'Simon',
+			        value: 50
+			    }, {
+			        id: 3,
+			        name: 'Tony',
+			        value: 45
+			    }, {
+			        id: 4,
+			        name: 'Annie',
+			        value: 60
+			    }
+			];
+		</p>
+		<h2>将上面数组分别按元素对象的value值从小到大进行排序后输出</h2>
+		<p id="objSmallToBig"></p>
+	</div>
+	<!-- 第七部分 排序 对象转成数组-->
+	<div id="partEight">
+		<h1>Part Ⅷ</h1>
+		<p >对象转成数组</p>
+		<p>var scoreObject = {
+			    "Tony": {
+			        "Math": 95,
+			        "English": 79,
+			        "Music": 68
+			    }, 
+			    "Simon": {
+			        "Math": 100,
+			        "English": 95,
+			        "Music": 98
+			    }, 
+			    "Annie": {
+			        "Math": 54,
+			        "English": 65,
+			        "Music": 88
+			    }
+			}
+		</p>
+		<p id = "objToArray"></p>
+		<!-- 第七部分 排序 数组转成对象-->
+		<p >数组转成对象</p>
+		<p>var menuArr = [
+			    [1, "Area1", -1],
+			    [2, "Area2", -1],
+			    [3, "Area1-1", 1],
+			    [4, "Area1-2", 1],
+			    [5, "Area2-1", 2],
+			    [6, "Area2-2", 2],
+			    [7, "Area1-2-3", 4],
+			    [8, "Area2-2-1", 6],
+			];
+		</p>
+		<p id = "arrayToobj"></p>
+	</div>
+	
+
+	<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
