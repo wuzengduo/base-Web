@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>倒数开始 滴答滴 滴答滴</title>
+</head>
+<body>
+	<div id="partOne">
+		<h1>Part Ⅰ</h1>
+		<input type="text" name="gosteps" value="" placeholder="请输入" id="gosteps">
+		<input type="button" name="gobtn" value="gobtn" placeholder="Go" id="gobtn">
+		<p id="resultOne">请打开控制台查看</p>
+	</div>
+	<div id="partTwo">
+		<h1>Part Ⅱ</h1>
+		<p id="nowTimeOne">当前时间(格式为 YYYY 年 MM 月 DD 日 星期 D HH:mm:ss)：</p>
+		<p id="nowTimeTwo">当前时间(输出格式变为：2008-10-10 Monday 07:10:30 PM)：</p>
+	</div>
+
+	<div id="partThree">
+		<h1>Part Ⅲ</h1>
+		<select id="year-select">
+		    <option value="2015">2015</option>
+		    <option value="2016">2016</option>
+		    <option value="2017">2017</option>   
+		    <option value="2018">2018</option>	
+		    <option value="2019">2019</option>
+		    <option value="2020">2020</option>
+		    <option value="2021">2021</option>
+		    <option value="2022">2022</option>
+		</select>
+
+		<select id="month-select">
+		    <option value="1">1</option>
+		    <option value="2">2</option>
+		    <option value="3">3</option>
+		    <option value="4">4</option>
+		    <option value="5">5</option>
+		    <option value="6">6</option>
+		    <option value="7">7</option>
+		    <option value="8">8</option>
+		    <option value="9">9</option>
+		    <option value="10">10</option>
+		    <option value="11">11</option>
+		    <option value="12">12</option>
+		</select>
+
+		<select id="day-select">
+<!-- 		    <option value="1">1</option>
+		    <option value="2">2</option>
+		    <option value="31">31</option> -->
+		</select>
+
+		<select id="hour-select">
+		    <!-- <option value="0">00</option>
+		    <option value="1">01</option>        
+		    ……
+		    <option value="23">23</option> -->
+		</select>
+
+		<select id="minite-select">
+		    <!-- <option value="0">0</option>
+		    <option value="1">1</option>
+		    ……
+		    <option>59</option> -->
+		</select>
+
+		<select id="second-select">
+		    <!-- <option value="0">0</option>
+		    <option value="1">1</option>
+		    <option>59</option> -->
+		</select>
+		<input type="button" name="selectBtn" value="确定日期" id="selectBtn">
+		<p id="result-wrapper">现在距离 </p>
+	</div>
+
+
+
+
+
+	<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
