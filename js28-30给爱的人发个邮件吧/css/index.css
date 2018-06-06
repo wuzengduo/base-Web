@@ -1,0 +1,47 @@
+*{
+	box-sizing: border-box;
+}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body{font:16px"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:underline} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word}
+/*居中*/
+.wrapper{
+	width: 600px;
+	margin:20px auto;
+	position: relative;
+}
+label{
+	display: inline-block;
+
+}
+#email-input{
+	display: inline-block;
+	width:300px;
+	height: 30px;
+	margin-left: 15px;
+	border:1px solid #DFDFDF;
+	padding-left: 10px;
+}
+#email-sug-wrapper {
+	width: 300px;
+	position: absolute;
+	top: 30px;
+	left: 103px;
+	color:#A6A3A3;
+	overflow: hidden;
+}
+#email-sug-wrapper li{
+	padding-left: 10px;
+}
+#email-sug-wrapper li:first-child{
+	background-color: #FDB5B5;
+}
+#email-sug-wrapper li:hover{
+	background-color: #8AC9D3;
+}
