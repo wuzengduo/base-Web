@@ -1,0 +1,94 @@
+/*初始化*/
+*{
+	box-sizing: border-box;
+}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body{font:16px"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:underline} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word}
+
+/*main*/
+main{
+	max-width: 80%; 
+	margin: 0 auto;
+}
+/*form*/
+.select{
+	width: 80%;
+	margin: 30px auto;
+}
+.select h1{
+	font-size: 18px;
+	margin: 20px 0px;
+}
+
+
+/*table 样式*/
+table{
+	width: 80%;
+	margin: 30px auto;
+	border:1px solid #aaa;
+}
+table th{
+	border:1px solid #aaa;
+	color: #fff;
+	background-color: #3F3F3F;
+	text-align: center;
+	vertical-align: middle;
+	letter-spacing: 1px;
+}
+table td{
+	vertical-align:text-top;
+  	padding:6px 15px 6px 6px;
+  	border:1px solid #aaa;
+}
+table tr:nth-child(odd) {
+  	background-color:#F5F5F5;
+}
+
+table tr:nth-child(even) {
+ 	background-color:#fff;
+}
+/*@media screen and (max-width: 600px) {
+
+    table {
+      	border: 0;
+    }
+
+    table thead {
+     	 display: none;
+    }
+
+    table tr {
+      	margin-bottom: 10px;
+      	display: block;
+  		border:1px solid #aaa;
+    }
+
+    table td {
+      	display: block;
+      	text-align: right;
+      	font-size: 16px;
+      	border-bottom: 1px dotted #ccc;
+    }
+
+    table td:last-child {
+      	border-bottom: 0;
+    }
+
+    table td:before {
+      	content: attr(data-label);
+      	float: left;
+      	text-transform: uppercase;
+      	font-weight: bold;
+      	background-color: #3F3F3F;
+      	color: #fff;
+    }
+  }*/
+
+
